@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mb-4">Registration Form</h2>
+    <form id="myForm">
+      <div class="row mb-3">
+        <div class="col">
+          <label>Name</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+          <span class="invalid-feedback text-danger" style="display: none;"></span>
+        </div>
+        <div class="col">
+          <label>Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+          <span class="invalid-feedback text-danger" style="display: none;"></span>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label>Password</label>
+        <input type="password" id="password" name="password" class="form-control" required>
+        <span class="invalid-feedback text-danger" style="display: none;"></span>
+        <div class="form-check mt-1">
+          <input type="checkbox" id="showPassword" class="form-check-input">
+          <label class="form-check-label">Show Password</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female" class="ms-3"> Female
+        <div class="d-block text-danger" style="display: none;"></div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label>Age</label>
+          <input type="number" id="age" name="age" class="form-control" required>
+          <span class="invalid-feedback text-danger" style="display: none;"></span>
+        </div>
+        <div class="col">
+          <label>Phone</label>
+          <div class="input-group">
+            <select id="countryCode" class="form-select" style="max-width:100px;">
+              <option value="+92">+92</option>
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+              <option value="+44">+44</option>
+            </select>
+            <input type="text" id="phoneInput" class="form-control" placeholder="Enter phone" required>
+          </div>
+          <span class="invalid-feedback text-danger" style="display: none;"></span>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label>Country</label>
+          <input type="text" id="country" name="country" class="form-control" required>
+          <span class="invalid-feedback text-danger" style="display: none;"></span>
+        </div>
+        <div class="col">
+          <label>City</label>
+          <input type="text" id="city" name="city" class="form-control" required>
+          <span class="invalid-feedback text-danger" style="display: none;"></span>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label>Address</label>
+        <textarea id="address" name="address" class="form-control" required></textarea>
+        <span class="invalid-feedback text-danger" style="display: none;"></span>
+      </div>
+
+      <div class="mb-3">
+        <label>Profession</label>
+        <input type="text" id="profession" name="profession" class="form-control" required>
+        <span class="invalid-feedback text-danger" style="display: none;"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="tableDiv" style="display:none;">
+      <h3 class="mt-5">Submitted Data</h3>
+      <table class="table table-bordered" id="dataTable">
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th><th>Email</th><th>Gender</th><th>Age</th>
+            <th>Phone</th><th>Country</th><th>City</th>
+            <th>Address</th><th>Profession</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- rows added dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

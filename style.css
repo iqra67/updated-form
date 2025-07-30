@@ -1,0 +1,119 @@
+.tech-mono {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #2a2a2a;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+/* Bold specific labels */
+label[for="name"],
+label[for="email"],
+label[for="password"],
+label[for="gender"],
+label[for="age"],
+label[for="phone"],
+label[for="city"],
+label[for="country"],
+label[for="address"],
+label[for="profession"] {
+  font-weight: bold;
+}
+body {
+  background-color: #99e5ee; 
+  margin: 0;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+/* Error Messages */
+.invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 0.825rem;
+  margin-top: 0.25rem;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+/* Success Toast */
+.success-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: rgb(149, 255, 248);
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+  z-index: 1000;
+}
+
+
+
+
+/* Improved Form Spacing */
+.form-group {
+  margin-bottom: 1.5rem; /* Increased from 1rem */
+}
+
+.form-label {
+  margin-bottom: 0.75rem; /* Increased from 0.5rem */
+  display: block;
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* Submit Button Styles */
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 2rem auto 0;
+  padding: 12px 24px;
+  background-color: #830869; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #b2ebf2; /* same as your current body bg */
+}
+body {
+  background-color: #f8f9fa;
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+table {
+  margin-top: 30px;
+}
+
+  #dataTable {
+    font-size: 14px;
+  }
+
+
+
